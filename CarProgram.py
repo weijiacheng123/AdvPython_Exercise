@@ -3,7 +3,7 @@ import Car as c
 def main():
     car_make = input("what's the make of the car?\n")
     car_model = input("what's the car's year model?\n")
-    car_speed = input("what's your speed now?\n")
+    car_speed = int(input("what's your speed now?\n"))
 
     my_car = c.car(car_model,car_make,car_speed)
     #print(my_new_car.get_descriptive_name())
@@ -12,12 +12,12 @@ def main():
     for accelerate in range(1,6):
         my_car.car_accelerate(5)
         my_car.get_speed(car_speed)
-        print(c.car_accelerate)
+        print(my_car.car_accelerate)
         
     for brake in range(1,6):
         my_car.car_brake(5)
         my_car.get_speed(car_speed)
-        print(c.car_brake)
+        print(my_car.car_brake)
 
 
 main()
